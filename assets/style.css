@@ -1,0 +1,94 @@
+:root{
+  font-size: 18px;
+}
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* main */
+.main-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  text-align: center;
+
+  background-image: url(./images/ракушка.jpg);
+  background-position: bottom;
+  background-size:cover
+}
+
+.main-h1, .main-text{
+  color: #926239;
+  margin: 5px;
+}
+
+.main-button{
+  width: 100px;
+  height: 40px;
+
+  margin: 10px auto;
+   
+  color: #926239;
+  border: none;  
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0); 
+  border: 1px  solid #926239;
+}
+.main-button:hover{
+  color: #ffffff;
+  background-color: #926239;
+  cursor: pointer;
+}
+/* main */
+
+.section-text{
+  text-align: center;
+}
+
+.text1{
+  margin: 0;
+   padding: 20px;
+
+   color: white;
+   background-color: #926239;
+  
+}
+
+.text2{
+  margin: 0;
+  padding: 20px;
+
+  background-color: white;
+  color: #926239;
+}
+
+.article-text{
+  display: inline-block;
+  padding: 10px;
+  width: 33%;
+  margin: 0;    
+}
+article > .article-text{
+  color: white;
+  background-color: #926239;
+}
+article .article-text:nth-child(2){
+  background-color: white;
+  color: #926239;
+}
+
+@media screen and (max-width: 1000px) {
+  .article-text{
+    display: block;
+    width: auto;
+  }
+}
